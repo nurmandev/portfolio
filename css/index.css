@@ -678,6 +678,7 @@ img{
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: .5rem;
+    width: 350px;
 }
 
 .services_modal-services{
@@ -976,6 +977,9 @@ img{
 .services_modal{
     padding: 0 .5rem;
 }
+.services_modal-content{
+    width: 300px;
+}
 .project_img{
     width: 200px;
 }
@@ -1017,6 +1021,9 @@ img{
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+}
+.services_modal-content{
+    width: 400px;
 }
 }
 
