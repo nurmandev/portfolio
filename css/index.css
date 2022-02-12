@@ -750,9 +750,7 @@ img{
     margin-bottom: var(--mb-0-5);
     color: var(--first-color);
 }
-.portfolio_discription{
-    
-}
+
 .portfolio_button:hover .button_icon{
     transform: translateX(.25rem);
 }
