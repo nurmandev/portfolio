@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="all.js">
-    <link rel="stylesheet" href="js/text.js">
-    <link rel="stylesheet" href="js/swiper-bundle.min 2.js">
-    <link rel="stylesheet" href="js/dark.js">
-
     <!---================ CSS ===========-->
     <link rel="stylesheet" href="css/index.css">
     <!---======================= icons =============----->
@@ -16,7 +11,22 @@
     <link rel="icon" href="./favicon_io/favicon.ico" type="image/x-icon"/>
 
     <!--=============== SWIPER CSS =============-->
-    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
+    <!------================ Bootsrap==============-->
+    <!--==========css bootsrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+     rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+     <!----------==============javascript bootsrap==============-->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
+
+        <!--======== MAIN JS ===========-->
+    <script src="js/all.js" defer></script>
+    <script src="js/dark.js" defer></script>
+    <script src="js/text.js" defer></script>
+    <script src="js/swiper-bundle.min.js" defer></script>   
     <title>My Portfolio</title>
 </head>
 <body>
@@ -247,7 +257,7 @@
         <div class="skills_list grid">
             <div class="skills_data">
                 <div class="skills_tittles">
-                    <h3 class="skills_name">PHP</h3>
+                    <h3 class="skills_name">NodeJs</h3>
                     <span class="skills_number">70%</span>
                 </div>
                 <div class="skills_bar">
@@ -257,21 +267,41 @@
 
             <div class="skills_data">
                 <div class="skills_tittles">
-                    <h3 class="skills_name">Python</h3>
+                    <h3 class="skills_name">MangoDB</h3>
                     <span class="skills_number">56%</span>
                 </div>
                 <div class="skills_bar">
-                    <span class="skills_parcentange skills_python"></span>
+                    <span class="skills_parcentange skills_mango"></span>
                 </div>
             </div>
 
             <div class="skills_data">
                 <div class="skills_tittles">
-                    <h3 class="skills_name">Firebase</h3>
+                    <h3 class="skills_name">React</h3>
+                    <span class="skills_number">86%</span>
+                </div>
+                <div class="skills_bar">
+                    <span class="skills_parcentange skills_react"></span>
+                </div>
+            </div>
+
+            <div class="skills_data">
+                <div class="skills_tittles">
+                    <h3 class="skills_name">APIs</h3>
+                    <span class="skills_number">90%</span>
+                </div>
+                <div class="skills_bar">
+                    <span class="skills_parcentange skills_api"></span>
+                </div>
+            </div>
+
+            <div class="skills_data">
+                <div class="skills_tittles">
+                    <h3 class="skills_name">Express Js</h3>
                     <span class="skills_number">88%</span>
                 </div>
                 <div class="skills_bar">
-                    <span class="skills_parcentange skills_firebase"></span>
+                    <span class="skills_parcentange skills_ejs"></span>
                 </div>
             </div>
         </div>
@@ -616,59 +646,78 @@
         <div class="portfolio_container container swiper-container">
             <div class="swiper-wrapper">
                 <!---===========================  PORTFOLIO   1   ===================-->
-                <div class="portfolio_content grid swiper-slide">
-                    <img src="./img/photo-1593642532400-2682810df593.jpeg" class="portfolio_img">
-
-                    <div class="portfolio_data">
-                        <h3 class="potfolio_tittle">Student website</h3>
-                        <p class="portfolio_discription">Website thet allow student to register and access to the own porter
-                             </p>
-                        <a href="#" class="button button--flex button--small portfolio_button">Demo
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
                     </div>
-                </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="./img/photo-1593642532400-2682810df593.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="potfolio_tittle">Student website</h3>
+                            <p class="portfolio_discription">Website thet allow student to register and access to the own porter
+                                 </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                      </div>
 
 
-                   <!---===========================  PORTFOLIO   2   ===================-->
-                   <div class="portfolio_content grid swiper-slide">
-                    <img src="./img/photo-1593642532973-d31b6557fa68.jpeg" class="portfolio_img">
+                      <div class="carousel-item">
+                        <img src="./img/photo-1593642532973-d31b6557fa68.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="potfolio_tittle">Calculator</h3>
+                            <p class="portfolio_discription">calculator that allow everybody to calculate and give the exact answer
+                                 </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                      </div>
 
-                    <div class="portfolio_data">
-                        <h3 class="potfolio_tittle">Calculator</h3>
-                        <p class="portfolio_discription">calculator that allow everybody to calculate and give the exact answer
-                             </p>
-                        <a href="#" class="button button--flex button--small portfolio_button">Demo
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
+                      
+                      <div class="carousel-item">
+                        <img src="./img/photo-1620165481783-bf3a24710c0a.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="potfolio_tittle">E-commerce Website</h3>
+                            <p class="portfolio_discription">Online shoping website that allow everybody to buy and sale produdut and give the good interface
+                                 </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                      </div>
+
+                      <div class="carousel-item">
+                        <img src="./img/photo-1593642532842-98d0fd5ebc1a.jpeg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h3 class="potfolio_tittle">Music app</h3>
+                            <p class="portfolio_discription">Music application with modern brand design with new technologies
+                                 </p>
+                            <a href="#" class="button button--flex button--small portfolio_button">Demo
+                                <i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                      </div>
                     </div>
-                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <!------------=====================================================================================------------------------>
+               
 
-                   <!---===========================  PORTFOLIO   3   ===================-->
-                   <div class="portfolio_content grid swiper-slide">
-                    <img src="./img/photo-1593642532842-98d0fd5ebc1a.jpeg" class="portfolio_img">
 
-                    <div class="portfolio_data">
-                        <h3 class="potfolio_tittle">Music app</h3>
-                        <p class="portfolio_discription">Music application with modern brand design with new technologies
-                             </p>
-                        <a href="#" class="button button--flex button--small portfolio_button">Demo
-                            <i class="uil uil-arrow-right button_icon"></i>
-                        </a>
-                    </div>
-                    </div>
-                </div>
-            <!-- add arrow  -->
-            <div class="swiper-button-next">
-                <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-            </div>
-            <div class="swiper-button-prev">
-                <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-            </div>
-           <!-- add pegination -->
-           <div class="swiper-pagination"></div>
-        
-        </div>
+            
       </section>
 
 
@@ -693,6 +742,7 @@
            <h2 class="section_tittle">Testimonial</h2>
            <span class="section_subtittle">Feedback</span>
 
+           
            <div class="testimonial_container container swiper-container">
                <div class="swiper-wrapper">
                     <!---============== TESTIMONIAL 1 ==============-->
@@ -855,6 +905,7 @@
                     <li><a href="#portfolio" class="footer_link">Portfolio</a></li>
 
                     <li><a href="#contact" class="footer_link">Contact me</a></li>
+                    <li> <a download="/app-final-apk-61dc06a5f0a24-1641809573.apk" href="application/app-final-apk-61dc06a5f0a24-1641809573.apk" class="footer_link">Download My Application for APK</li>
                 </ul>
                 <div class="footer_socials">
                     <a href="https://www.facebook.com" target="_blank"  class="footer_social">
@@ -880,12 +931,7 @@
         <i class="uil uil-arrow-up scrollup_icon"></i>
     </a>
 </main>
-    <!--============SCROLL JS ==============-->
-    <script src="js/all.js"></script>
-    <script src="js/text.js"></script>
-    <script src="js/dark.js"></script>
-    <script src="js/swiper-bundle.min.js"></script>
-
-    <!--======== MAIN JS ===========-->
+   
+  
 </body>
 </html>

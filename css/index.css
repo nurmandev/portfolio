@@ -1,6 +1,8 @@
 /*=================== Google font ===============*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+a{
+    text-decoration: none;
+}
 /*=============== VARIABLE CSS =============*/
 :root{
     --header-hight: 3rem;
@@ -100,7 +102,7 @@ button{
     cursor: pointer;
 }
 .change-theme:hover{
-    color: var(--first-color);
+    color: var(--first-color-alt);
 }
 
 
@@ -294,6 +296,7 @@ img{
 /* show scroll*/
 .show-scroll{
     bottom: 5rem;
+    display: block;
 }
 
 .home_content{
@@ -518,11 +521,17 @@ img{
 .skills_php{
     width: 70%;
 }
-.skills_python{
+.skills_mango{
     width: 56%;
 }
-.skills_firebase{
+.skills_react{
+    width: 86%;
+}
+.skills_ejs{
     width: 88%;
+}
+.skills_api{
+    width: 90%;
 }
 .skills_adobe{
     width: 84%;
@@ -713,60 +722,39 @@ img{
 
 /*=======================   PORTFOLIO   ====================*/
 
+
+#carouselExampleCaptions{
+    width: 85%;
+    max-width: 70%;
+    margin: 1rem auto;
+    border-radius: 10px;
+}
+#carouselExampleCaptions img{
+    width: 100%;
+    text-align: center;
+    height: 50vh; 
+    object-fit: cover;
+    border-radius: 10px;
+}
 .portfolio_container{
     overflow: initial;
+    justify-content: center;
+    align-items: center;
 }
 .portfolio_content{
     padding: 0 1.5rem;
-}
-.portfolio_img{
-    width: 265px;
-    border-radius: .5rem;
-    justify-self: center;
 }
 
 .potfolio_tittle{
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
+    color: var(--first-color);
 }
 .portfolio_discription{
-    margin-bottom: var(--mb-0-75);
+    
 }
 .portfolio_button:hover .button_icon{
     transform: translateX(.25rem);
-}
-.swiper-button-prev::after,
-.swiper-button-next::after{
-    content: '';
-    display: none;
-}
-.swiper-pagination{
-    display: inline;
-}
-.swiper-portfolio-icon{
-    font-size: 2rem;
-    color: var(--first-color);
-    
-}
-
-.swiper-button-prev{
-    left: -.5rem;
-}
-.swiper-button-next{
-    right: -.5rem;
-}
-
-.swiper-container-horizontal > .swiper-pagination-bullets{
-    bottom: -2.5rem;
-}
-
-.swiper-pagination-bullet-active{
-    background-color: var(--first-color);
-}
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet{
-    outline: none;
 }
 
 /*=======================   PROJECT   ====================*/
@@ -992,6 +980,17 @@ img{
     margin-right: 0;
     margin-bottom: var(--mb-0-25);
 }
+#carouselExampleCaptions{
+    width: 55%;
+    max-width: 55%;
+    margin: 1rem auto;
+    
+}
+#carouselExampleCaptions img{
+    width: 100%;
+    text-align: center;
+    height: 50vh; 
+}
 }
 
 /*============== for large device ==============*/
@@ -1024,6 +1023,17 @@ img{
 }
 .services_modal-content{
     width: 400px;
+}
+#carouselExampleCaptions{
+    width: 65%;
+    max-width: 60%;
+    margin: 1rem auto;
+    
+}
+#carouselExampleCaptions img{
+    width: 100%;
+    text-align: center;
+    height: 50vh; 
 }
 }
 
@@ -1122,6 +1132,17 @@ body{
 .services_modal-content{
     width: 450px;
 }
+#carouselExampleCaptions{
+    width: 75%;
+    max-width: 65%;
+    margin: 1rem auto;
+    
+}
+#carouselExampleCaptions img{
+    width: 90%;
+    text-align: center;
+    height: 50vh; 
+}
 .portfolio_img{
     width: 320px;
 }
@@ -1188,5 +1209,16 @@ body{
     }
     .contact_inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+    #carouselExampleCaptions{
+        width: 75%;
+        max-width: 65%;
+        margin: 1rem auto;
+        
+    }
+    #carouselExampleCaptions img{
+        width: 50%;
+        text-align: center;
+        height: 70vh; 
     }
 }
